@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header .menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+header .menu a:hover {
+  color: #00bcd4;
+}
+
+header .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+.contenido {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.columna {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.columna:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.columna img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.columna.izquierda .sociales {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.columna.izquierda .sociales a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.columna.izquierda .sociales a:hover {
+  transform: scale(1.2);
+}
+
+.columna.centro h2 {
+  margin-bottom: 10px;
+}
+
+.columna.centro button {
+  padding: 8px 15px;
+  background: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.columna.centro button:hover {
+  background: #0097a7;
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #00bcd4;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contenido {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+} 

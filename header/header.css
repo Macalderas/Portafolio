@@ -1,0 +1,26 @@
+
+header {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+
+section {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}

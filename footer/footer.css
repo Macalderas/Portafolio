@@ -1,0 +1,36 @@
+
+footer {
+  background: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* 🌙 Dark Mode */
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .stack {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark .card a {
+  color: #00c4ff;
+}
+
+body.dark header {
+  background: #0d0d0d;
+}
+
+body.dark footer {
+  background: #0d0d0d;
+}
